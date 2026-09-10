@@ -1,3 +1,4 @@
+package defensatorres;
 /** Enlaces modificados exclusivamente por ListaDobleEnemigos. */
 public final class NodoEnemigo {
     final Enemigo enemigo;
