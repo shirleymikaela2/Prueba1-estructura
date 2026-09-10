@@ -2,7 +2,6 @@ package defensatorres;
 
 import java.util.Scanner;
 
-/** Punto de entrada y menu principal solicitado en la prueba. */
 public class TowerDefenseApp {
     private static final Scanner ENTRADA = new Scanner(System.in);
     private static final JuegoTowerDefense JUEGO = new JuegoTowerDefense();
