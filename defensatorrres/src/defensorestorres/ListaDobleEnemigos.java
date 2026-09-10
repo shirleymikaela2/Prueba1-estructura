@@ -1,4 +1,4 @@
-package defensatorres;
+package defensorestorres;
 /** Lista doble sin centinelas: primero.anterior y ultimo.siguiente son null. */
 public final class ListaDobleEnemigos {
     private NodoEnemigo primero;
