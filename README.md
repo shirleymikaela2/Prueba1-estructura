@@ -17,5 +17,3 @@ Asimismo, se implementó la clase `ListaSecuencialTorres`, que administra un con
 * `mostrar()` / `resumen()`: Imprimen o consolidan en un `StringBuilder` la información de las torres activas.
 * `obtenerEn(int indice)`: Recupera una torre validando los límites lógicos del arreglo.
 
-**Evidencia:**  
-![Evidencia de Andrés](evidencias/andres-torres.png)
