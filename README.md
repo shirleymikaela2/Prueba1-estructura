@@ -61,6 +61,13 @@ El programa fue desarrollado aplicando estructuras de datos lineales implementad
 ### Shirley — Lógica del juego y lista circular
 
 ### Andrés — Torres y lista secuencial
+Se desarrolló la clase `Torre`, la cual representa las torres defensivas del juego. Cada torre posee identificador, posición en la ruta, alcance de ataque y daño.
+
+También se implementó `ListaSecuencialTorres`, la cual almacena las torres en un arreglo manual de capacidad fija. No se utilizaron colecciones prediseñadas de Java.
+
+**Archivos desarrollados:** `Torre.java`, `ListaSecuencialTorres.java`.
+
+**Estructura utilizada:** arreglo manual de tamaño fijo con contador de elementos.
 
 ### Josué — Enemigos y lista doblemente enlazada
 
