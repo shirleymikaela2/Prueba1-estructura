@@ -80,9 +80,3 @@ El programa fue desarrollado aplicando estructuras de datos lineales implementad
 6. Los enemigos derrotados son eliminados de la lista de enemigos activos.
 7. Si un enemigo llega a la posición 20, el jugador pierde una vida.
 8. La partida termina cuando las vidas llegan a cero o cuando todas las oleadas son completadas.
-
-## Cómo ejecutar el proyecto
-
-1. Clonar el repositorio:
-   ```bash
-   git clone [https://github.com/shirleymikaela2/Prueba1-estructura.git](https://github.com/shirleymikaela2/Prueba1-estructura.git)
