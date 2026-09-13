@@ -68,6 +68,16 @@ El programa fue desarrollado aplicando estructuras de datos lineales implementad
 
 ### Héctor — Panel visual de la ruta
 
+Se desarrolló la clase `PanelRuta`, encargada de representar gráficamente la ruta por la que avanzan los enemigos. La ruta comprende las posiciones desde 0 hasta 20 y termina en la base que debe ser protegida.
+
+El panel muestra las torres registradas sobre la ruta, los enemigos activos según su posición y las vidas restantes del jugador. La información visual se actualiza cada vez que el usuario avanza un turno.
+
+**Archivo desarrollado:** `PanelRuta.java`.
+
+**Tecnología utilizada:** Java Swing, utilizando `JPanel` y `Graphics`.
+
+**Operaciones implementadas:** dibujar ruta, mostrar posiciones de 0 a 20, dibujar torres, dibujar enemigos, mostrar base y actualizar vidas.
+
 ### Lenin — Interfaz gráfica
 
 ## Funcionamiento del juego
