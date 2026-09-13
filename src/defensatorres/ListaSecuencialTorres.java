@@ -11,16 +11,14 @@ public class ListaSecuencialTorres {
     }
 
     public boolean insertar(Torre torre) {
-        if (torre == null || cantidad == torres.length || buscarPorId(torre.getId()) != null)
-            return false;
+        if (torre == null || cantidad == torres.length || buscarPorId(torre.getId()) != null) return false;
         torres[cantidad++] = torre;
         return true;
     }
 
     public Torre buscarPorId(int id) {
         for (int i = 0; i < cantidad; i++) {
-            if (torres[i].getId() == id)
-                return torres[i];
+            if (torres[i].getId() == id) return torres[i];
         }
         return null;
     }
@@ -28,8 +26,7 @@ public class ListaSecuencialTorres {
     public boolean eliminarPorId(int id) {
         for (int i = 0; i < cantidad; i++) {
             if (torres[i].getId() == id) {
-                for (int j = i; j < cantidad - 1; j++)
-                    torres[j] = torres[j + 1];
+                for (int j = i; j < cantidad - 1; j++) torres[j] = torres[j + 1];
                 torres[--cantidad] = null;
                 return true;
             }
@@ -37,37 +34,17 @@ public class ListaSecuencialTorres {
         return false;
     }
 
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public Torre obtener(int indice) {
-        if (indice < 0 || indice >= cantidad) {
-            return null;
-        }
-
-        return torres[indice];
-    }
-
-    public int contarActivas() {
-        return cantidad;
-    }
+    public int contarActivas() { return cantidad; }
 
     public void mostrar() {
-        if (cantidad == 0) {
-            System.out.println("No hay torres registradas.");
-            return;
-        }
-        for (int i = 0; i < cantidad; i++)
-            System.out.println(torres[i]);
+        if (cantidad == 0) { System.out.println("No hay torres registradas."); return; }
+        for (int i = 0; i < cantidad; i++) System.out.println(torres[i]);
     }
 
     public String resumen() {
-        if (cantidad == 0)
-            return "No hay torres registradas.";
+        if (cantidad == 0) return "No hay torres registradas.";
         StringBuilder resultado = new StringBuilder();
-        for (int i = 0; i < cantidad; i++)
-            resultado.append(torres[i]).append('\n');
+        for (int i = 0; i < cantidad; i++) resultado.append(torres[i]).append('\n');
         return resultado.toString();
     }
 
