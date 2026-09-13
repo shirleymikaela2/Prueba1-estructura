@@ -60,6 +60,14 @@ El programa fue desarrollado aplicando estructuras de datos lineales implementad
 
 ### Shirley — Lógica del juego y lista circular
 
+**Archivos desarrollados:** `JuegoTowerDefense.java` y `ListaCircularOleadas.java`.
+
+Se implementó la lógica principal del juego. La clase `JuegoTowerDefense` controla las vidas del jugador, los turnos, el inicio de oleadas, el movimiento de enemigos, los ataques de las torres y el final de la partida.
+
+También se implementó `ListaCircularOleadas`, una lista simplemente enlazada circular. En esta estructura el último nodo apunta al primero, permitiendo recorrer las oleadas de forma continua.
+
+**Operaciones implementadas:** registrar oleada, obtener oleada actual, avanzar a la siguiente oleada, reiniciar ciclo, iniciar oleada, avanzar turno y mostrar el estado general.
+
 ### Andrés — Torres y lista secuencial
 Se desarrolló la clase `Torre`, la cual representa las torres defensivas del juego. Cada torre posee identificador, posición en la ruta, alcance de ataque y daño.
 
