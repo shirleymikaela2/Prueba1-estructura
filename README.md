@@ -89,7 +89,12 @@ El panel muestra las torres registradas sobre la ruta, los enemigos activos seg�
 
 **Tecnología utilizada:** Java Swing, utilizando `JPanel` y `Graphics`.
 
-**Operaciones implementadas:** dibujar ruta, mostrar posiciones de 0 a 20, dibujar torres, dibujar enemigos, mostrar base y actualizar vidas.
+**Operaciones implementadas:** 
+**Operaciones implementadas (Métodos):**
+* `actualizarDatos(...)`: Sincroniza el panel con el estado actual de las listas (torres y enemigos) y refresca la pantalla (`repaint`).
+* `paintComponent(...)`: Renderiza el entorno estático (fondo, ruta, marcadores numéricos de 0 a 20, zona INI y BASE).
+* `dibujarTorres(...)`: Recorre la estructura secuencial para calcular y pintar cada torre en su posición.
+* `dibujarEnemigos(...)`: Itera sobre la lista doblemente enlazada para graficar el avance de cada enemigo en la ruta.
 
 ### Lenin — Interfaz gráfica
 
