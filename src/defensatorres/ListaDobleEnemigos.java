@@ -124,8 +124,8 @@ public class ListaDobleEnemigos {
         return cantidad == 0;
     }
 
-    public NodoEnemigo obtenerPrimero() {
-        return primero;
+    public NodoEnemigo getPrimero() {
+    return primero;
     }
 
     public void mostrarAdelante() {

@@ -13,11 +13,11 @@ public class NodoEnemigo {
         siguiente = null;
     }
 
-    public Enemigo obtenerDato() {
-        return dato;
-    }
+   public Enemigo getDato() {
+    return dato;
+}
 
-    public NodoEnemigo obtenerSiguiente() {
-        return siguiente;
-    }
+public NodoEnemigo getSiguiente() {
+    return siguiente;
+}
 }
