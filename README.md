@@ -97,6 +97,21 @@ El panel muestra las torres registradas sobre la ruta, los enemigos activos seg�
 * `dibujarEnemigos(...)`: Itera sobre la lista doblemente enlazada para graficar el avance de cada enemigo en la ruta.
 
 ### Lenin — Interfaz gráfica
+### Lenin — Interfaz gráfica
+
+**Archivos desarrollados:** `VentanaTowerDefense.java` y `TowerDefenseApp.java`.
+
+Se implementó la interfaz gráfica del juego utilizando Java Swing. La clase `VentanaTowerDefense` contiene los campos de texto, botones y mensajes que permiten al usuario interactuar con el sistema sin utilizar un menú por consola.
+
+Desde la ventana se pueden registrar torres indicando su identificador, nombre, tipo, posición, daño, rango y costo. También se pueden registrar oleadas con su identificador, cantidad de enemigos, tipo, vida base y velocidad.
+
+La interfaz permite mostrar las torres registradas, eliminar una torre por su identificador, mostrar oleadas, iniciar una oleada, avanzar turnos, mostrar enemigos hacia adelante y hacia atrás, cargar un ejemplo y reiniciar el ciclo de oleadas.
+
+La clase `TowerDefenseApp` es el punto de inicio de la aplicación. Su método `main` ejecuta `VentanaTowerDefense`, mostrando la interfaz gráfica al usuario.
+
+**Tecnología utilizada:** Java Swing.
+
+**Operaciones implementadas:** registrar torre, eliminar torre, registrar oleada, iniciar oleada, avanzar turno, mostrar torres, mostrar oleadas, mostrar enemigos, cargar ejemplo, reiniciar ciclo y actualizar el estado visual del juego.
 
 ## Funcionamiento del juego
 
