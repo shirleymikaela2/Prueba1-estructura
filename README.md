@@ -72,6 +72,13 @@ También se implementó `ListaSecuencialTorres`, la cual almacena las torres en 
 ### Josué — Enemigos y lista doblemente enlazada
 
 ### Cris — Oleadas y nodo de oleada
+Se desarrolló la clase `Oleada`, la cual representa la configuración de cada grupo de enemigos del juego. Cada oleada posee identificador, cantidad de enemigos, tipo de enemigo, vida base y velocidad base.
+
+También se implementó `NodoOleada`, el cual almacena los datos de una oleada y una referencia al siguiente nodo. Esto permite enlazar las oleadas dentro de una lista circular, donde el último nodo apunta al primero. No se utilizaron colecciones prediseñadas de Java.
+
+**Archivos desarrollados:** `Oleada.java`, `NodoOleada.java`.
+
+**Estructura utilizada:** nodo con un objeto de tipo `Oleada` y una referencia al siguiente nodo, utilizado en una lista simplemente enlazada circular.
 
 ### Héctor — Panel visual de la ruta
 Se desarrolló la clase `PanelRuta`, encargada de representar gráficamente la ruta por la que avanzan los enemigos. La ruta comprende las posiciones desde 0 hasta 20 y termina en la base que debe ser protegida.
