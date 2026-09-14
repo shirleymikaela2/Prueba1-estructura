@@ -72,6 +72,15 @@ También se implementó `ListaSecuencialTorres`, la cual almacena las torres en 
 **Estructura utilizada:** arreglo manual de tamaño fijo con contador de elementos.
 
 ### Josué — Enemigos y lista doblemente enlazada
+**Archivos desarrollados:** `Enemigo.java`, `NodoEnemigo.java` y `ListaDobleEnemigos.java`.
+
+Se implementó la clase `Enemigo`, que representa a cada enemigo activo del juego. Sus atributos principales son identificador, tipo, vida, velocidad, posición y recompensa.
+
+También se implementó una lista doblemente enlazada mediante las clases `NodoEnemigo` y `ListaDobleEnemigos`. Esta estructura conserva las referencias `primero` y `ultimo`, por lo que permite recorrer los enemigos tanto hacia adelante como hacia atrás.
+
+La lista administra el movimiento de los enemigos en cada turno, elimina a los que llegan a la base, aplica los ataques recibidos desde las torres y elimina a los enemigos derrotados.
+
+**Operaciones implementadas:** insertar enemigo al final, buscar por identificador, mover enemigos, eliminar escapados, atacar con torres, eliminar enemigos destruidos, mostrar hacia adelante y mostrar hacia atrás.
 
 ### Cris — Oleadas y nodo de oleada
 Se desarrolló la clase `Oleada`, la cual representa la configuración de cada grupo de enemigos del juego. Cada oleada posee identificador, cantidad de enemigos, tipo de enemigo, vida base y velocidad base.
