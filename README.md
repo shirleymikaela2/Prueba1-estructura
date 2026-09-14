@@ -54,7 +54,9 @@ El programa fue desarrollado aplicando estructuras de datos lineales implementad
 | `NodoOleada` | Nodo utilizado para enlazar las oleadas. |
 | `ListaCircularOleadas` | Administra las oleadas mediante una lista circular. |
 | `JuegoTowerDefense` | Controla la lógica principal: turnos, vidas, ataques, movimiento y fin del juego. |
-| `TowerDefenseApp` | Clase principal que inicia la aplicación por consola. |
+| `PanelRuta` | Representa gráficamente la ruta, las torres, los enemigos y la base. |
+| `VentanaTowerDefense` | Contiene los campos, botones y acciones de la interfaz gráfica. |
+| `TowerDefenseApp` | Clase principal que inicia la interfaz gráfica. |
 
 ## Documentación por integrante
 
