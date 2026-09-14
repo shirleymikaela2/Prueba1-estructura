@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<<<<< HEAD\\\\\\\\\\\\\
 package defensatorres;
 
 import java.awt.BasicStroke;
