@@ -97,7 +97,6 @@ El panel muestra las torres registradas sobre la ruta, los enemigos activos seg�
 * `dibujarEnemigos(...)`: Itera sobre la lista doblemente enlazada para graficar el avance de cada enemigo en la ruta.
 
 ### Lenin — Interfaz gráfica
-### Lenin — Interfaz gráfica
 
 **Archivos desarrollados:** `VentanaTowerDefense.java` y `TowerDefenseApp.java`.
 
