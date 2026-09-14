@@ -1,46 +1,34 @@
 # Prueba1-estructura
-# Tower Defense - Prueba Práctica de Estructura de Datos
+### Héctor — Representación Gráfica y Panel de Ruta
 
-## Descripción del proyecto
+Este módulo implementa la interfaz gráfica principal del juego utilizando componentes de Java Swing, encargándose del renderizado visual de la ruta, las torres, los enemigos y la base.
 
-Este proyecto consiste en el desarrollo de un juego básico de tipo **Tower Defense** en Java. El jugador registra torres para defender una ruta de longitud 20, mientras diferentes oleadas de enemigos avanzan hacia la base.
+### 1. Clase `PanelRuta`
 
-Durante cada turno, los enemigos se mueven según su velocidad y las torres atacan a los enemigos que se encuentran dentro de su rango. Si un enemigo llega a la posición final de la ruta, el jugador pierde una vida. La partida termina cuando el jugador pierde todas sus vidas o cuando se completan todas las oleadas registradas.
+La clase `PanelRuta` hereda de `JPanel` y funciona como el lienzo gráfico, gestionando la representación en pantalla de todos los elementos visuales sobre la ruta de combate.
 
-El programa fue desarrollado aplicando estructuras de datos lineales implementadas manualmente, sin utilizar colecciones prediseñadas como `ArrayList`, `LinkedList`, `Queue` o `Deque`.
+#### Atributos Principales
 
-## Integrantes
+* `torres`: Instancia de `ListaSecuencialTorres` que contiene las referencias a las defensas activas en el mapa.
+* `enemigos`: Instancia de `ListaDobleEnemigos` que mantiene el registro de las unidades hostiles en movimiento a lo largo de la ruta.
+* `vidasJugador`: Valor numérico entero que representa la salud actual o los puntos de vida restantes de la base.
 
-- Shirley 
-- Andrés 
-- Josué
-- Cris
-- Héctor
-- Lenin
+#### Métodos y Lógica Implementada
 
-## Requisitos cumplidos
+* **Constructor (`PanelRuta()`)**: Inicializa el panel estableciendo un color de fondo específico y configurando sus dimensiones preferidas en 620x300 píxeles.
+* **`actualizarDatos(...)`**: Recibe y actualiza las referencias de las estructuras de datos (torres y enemigos) y las vidas del jugador, invocando posteriormente el método `repaint()` para refrescar la interfaz con la información más reciente.
+* **`paintComponent(Graphics g)`**: Método sobrescrito responsable de dibujar el entorno estático; renderiza el texto de las vidas, la geometría de la ruta principal, las marcas numéricas de posición, la zona de inicio ("INI") y la zona final ("BASE"). Finalmente, delega la responsabilidad visual a los métodos de dibujo dinámico.
+* **`dibujarTorres(...)`**: Tras validar que la lista no sea nula, recorre secuencialmente las torres activas, calcula su posición en la ruta de forma proporcional y las dibuja como rectángulos con su identificador correspondiente (ej. "T1").
+* **`dibujarEnemigos(...)`**: Verifica la existencia de la lista y recorre los nodos de la estructura doblemente enlazada, calculando la coordenada correspondiente al avance de cada enemigo para dibujarlo como un óvalo acompañado de su identificador (ej. "E1").
 
-- Implementación en lenguaje Java.
-- Uso de una lista secuencial manual para almacenar torres.
-- Uso de una lista doblemente enlazada para los enemigos activos.
-- Uso de una lista simplemente enlazada circular para las oleadas.
-- Registro, búsqueda, eliminación y visualización de torres.
-- Registro, visualización e inicio de oleadas.
-- Movimiento de enemigos por turnos.
-- Ataque de torres a enemigos dentro de su rango.
-- Eliminación de enemigos derrotados.
-- Reducción de vidas cuando un enemigo llega a la base.
-- Finalización de la partida al perder todas las vidas o completar las oleadas.
-- No se utilizaron estructuras lineales prediseñadas de Java.
+### 2. Análisis de Complejidad Algorítmica
 
-## Estructuras de datos utilizadas
+* **Actualización de estado (`actualizarDatos`)**: O(1), debido a que la operación se limita a realizar asignaciones de variables por referencia y llamar a la actualización de la cola de eventos visuales.
+* **Renderizado de la interfaz (`paintComponent`)**: O(T + E), donde T representa la cantidad de torres activas y E la cantidad de enemigos en pantalla. La complejidad es lineal combinada, ya que la función debe invocar iteraciones completas sobre ambas listas (`dibujarTorres` y `dibujarEnemigos`) para proyectar cada objeto gráfico en cada fotograma o ciclo de repintado.
 
-| Estructura | Aplicación dentro del juego |
-|---|---|
-| Lista secuencial manual | Almacena las torres registradas por el jugador. |
-| Lista doblemente enlazada | Gestiona los enemigos activos y permite recorrerlos hacia adelante y hacia atrás. |
-| Lista simplemente enlazada circular | Administra las oleadas de enemigos de forma continua. |
+**Archivos desarrollados:** `PanelRuta.java`.
 
+<<<<<<< HEAD
 ## Clases del proyecto
 
 | Clase | Responsabilidad |
@@ -141,3 +129,6 @@ La clase `TowerDefenseApp` es el punto de inicio de la aplicación. Su método `
 6. Los enemigos derrotados son eliminados de la lista de enemigos activos.
 7. Si un enemigo llega a la posición 20, el jugador pierde una vida.
 8. La partida termina cuando las vidas llegan a cero o cuando todas las oleadas son completadas.
+=======
+**Estructura utilizada:** `JPanel` de la biblioteca estándar de Java para renderizado de gráficos 2D.
+>>>>>>> bff347d247bd3481c65b504653c5393aff66ba92
